@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>spiderman</h1>
+    <h1>ironman</h1>
+    <h2>thor</h2>
+    <h4>captain america</h4>
+    <p>paragraph</p>
+    <div>division</div><br><br>
+    <button onclick="tagcount()">count</button>
+    <p id="pass1"></p>
+    <script>
+        function tagcount(){
+        let tagh1 = document.getElementsByTagName("h1");
+        let tagh2 = document.getElementsByTagName("h2");
+        let tagh4 = document.getElementsByTagName("h4")
+        let tagp = document.getElementsByTagName("p")
+        let tagdiv = document.getElementsByTagName("div")
+
+        document.getElementById (
+            "pass1"
+         ) .innerHTML = `number of h1 tag:${tagh1.length} <br> number of h2 tags:${tagh2.length} <br> number of h4 tags:${tagh4.length} <br> number of p tags:${tagp.length} <br> number of div tags:${tagdiv.length}`;
+           }
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!-- 2.getElementsByclass -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getElementsByClassName</title>
+</head>
+<body>
+    <h1 class="text">Today is Wednesday</h1>
+    <h2 class="text">Pyspider</h2>
+    <h3 class="text">Jspider</h3>
+    <h4 class="text">Qspider</h4>
+    <p class="text"> paragraph</p>
+    <div class="text">division</div>
+    <button onclick="change()">Feel The Change</button>
+    <Script>
+        function change(){
+            let element = document.getElementsByClassName("text")
+           // element[0].style.color = 'green'
+          //element[1].style.color = 'red'
+          for(i in element){
+            if ([i] % 2 ==0) {
+              element[i].style.color='green'
+            }
+              else {
+                element[i].style.color='red'
+            }
+        
+        }
+    }
+    </Script>
+</body>
+</html>

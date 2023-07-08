@@ -1,0 +1,59 @@
+<!-- 1.getElementById 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" name=" " id="num" placeholder="enter the value"><br><br>
+    <button onclick="math()">Sqr/Cube</button>
+    <p id="pass"></p>
+    <p id="pass2"></p>
+    <script>
+        function math(){
+            let digit=document.getElementById("num").value
+            let square = digit ** 2
+            let Cube = digit ** 3
+            document.getElementById("pass").innerHTML = `square of `$(digit) : $(square)
+            document.getElementById("pass2").innerHTML = `cube of `$(digit): $(Cube)
+        }
+    </script>
+</body>
+</html>  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" name=" " id="num" placeholder="enter the value"><br><br>
+    <input type="number" name=" " id="num1" placeholder="enter the value"><br><br>
+    <button onclick="math()">add</button>
+    <button onclick="math()">sub</button>
+    <button onclick="math()">mul</button>
+    <button onclick="math()">div</button>
+    <p id="pass"></p>
+    <p id="pass2"></p>
+    <p id="pass3"></p>
+    <p id="pass4"></p>
+    <script>
+        function math(){
+            let num=document.getElementById("num").value
+            let num1 = document.getElementById("num1").value
+            let add = num +num1
+            let sub = num-num1
+            let mul = num*num1
+            let div = num/num1
+            document.getElementById("pass").innerHTML = add
+            document.getElementById("pass2").innerHTML = sub
+            document.getElementById("pass3").innerHTML = mul
+            document.getElementById("pass3").innerHTML = mul
+        }
+    </script>
+</body>
+</html>
